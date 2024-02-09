@@ -1,0 +1,18 @@
+
+<div style="margin-top: 20px" class="row align-items-start">
+  <div class="col-md-6">
+  @if(form){
+    <h5>Dados</h5>
+    <pre> {{ form.value | json }} </pre>
+  } 
+  </div>
+  <div class="col-md-6">
+    @if(form){
+      <h5>Detalhes do Formulário</h5>
+      <pre>
+        Formulário válido: {{ form.valid }}
+        Formulário submetido: {{ form.submitted }}
+      </pre>   
+    }
+  </div>
+</div>
